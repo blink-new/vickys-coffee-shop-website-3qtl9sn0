@@ -374,8 +374,120 @@ function App() {
               </div>
             </div>
 
-            <div className="space-y-6">
-              <Card className="p-6 border-coffee-brown/10">
+            <div className="space-y-8">
+              <div className="text-center space-y-4">
+                <h3 className="font-display text-3xl font-bold text-coffee-brown">
+                  Our Coffee Brewing Process
+                </h3>
+                <p className="text-gray-600">
+                  From bean to cup, every step is crafted with precision and care
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Step 1: Bean Selection */}
+                <Card className="p-6 border-coffee-brown/10 hover:shadow-lg transition-shadow">
+                  <div className="space-y-4">
+                    <div className="aspect-video relative overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1649372639648-cf9efb47c184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwzfHxjb2ZmZWUlMjBiZWFucyUyMHNlbGVjdGlvbiUyMHJvYXN0ZWQlMjBicm93bnxlbnwwfDB8fHwxNzUzMjUyMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                        alt="Coffee bean selection"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-coffee-brown text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        1
+                      </div>
+                      <h4 className="font-display text-xl font-semibold text-coffee-brown">
+                        Bean Selection
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      We carefully select premium coffee beans from the finest coffee-growing regions, 
+                      ensuring each bean meets our high standards for flavor and quality.
+                    </p>
+                  </div>
+                </Card>
+
+                {/* Step 2: Grinding */}
+                <Card className="p-6 border-coffee-brown/10 hover:shadow-lg transition-shadow">
+                  <div className="space-y-4">
+                    <div className="aspect-video relative overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1503550376808-fd479d18db7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBncmluZGluZyUyMGdyaW5kZXIlMjBtYWNoaW5lJTIwYmVhbnN8ZW58MHwwfHx8MTc1MzI1MjI5Nnww&ixlib=rb-4.1.0&q=80&w=1080" 
+                        alt="Coffee grinding process"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-coffee-brown text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        2
+                      </div>
+                      <h4 className="font-display text-xl font-semibold text-coffee-brown">
+                        Fresh Grinding
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      Our beans are ground fresh for each order using professional-grade grinders, 
+                      preserving the essential oils and aromas that make great coffee.
+                    </p>
+                  </div>
+                </Card>
+
+                {/* Step 3: Brewing */}
+                <Card className="p-6 border-coffee-brown/10 hover:shadow-lg transition-shadow">
+                  <div className="space-y-4">
+                    <div className="aspect-video relative overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1717990379468-464c928bb242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBicmV3aW5nJTIwd2F0ZXIlMjBwb3VyaW5nJTIwZmlsdGVyfGVufDB8MHx8fDE3NTMyNTIzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                        alt="Coffee brewing process"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-coffee-brown text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        3
+                      </div>
+                      <h4 className="font-display text-xl font-semibold text-coffee-brown">
+                        Perfect Brewing
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      Using precise water temperature and timing, our skilled baristas extract 
+                      the perfect balance of flavors from each grind.
+                    </p>
+                  </div>
+                </Card>
+
+                {/* Step 4: Serving */}
+                <Card className="p-6 border-coffee-brown/10 hover:shadow-lg transition-shadow">
+                  <div className="space-y-4">
+                    <div className="aspect-video relative overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1610920051820-cb947e1c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBjdXAlMjBzZXJ2aW5nJTIwZmluYWwlMjBwcm9kdWN0JTIwc3RlYW18ZW58MHwwfHx8MTc1MzI1MjMwN3ww&ixlib=rb-4.1.0&q=80&w=1080" 
+                        alt="Final coffee serving"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-coffee-brown text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        4
+                      </div>
+                      <h4 className="font-display text-xl font-semibold text-coffee-brown">
+                        Perfect Serving
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      Your coffee is served at the optimal temperature in our carefully selected cups, 
+                      ready to deliver the perfect coffee experience.
+                    </p>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Customer testimonial */}
+              <Card className="p-6 border-coffee-brown/10 bg-coffee-brown/5">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="flex text-coffee-brown">
                     {[...Array(5)].map((_, i) => (
@@ -385,24 +497,11 @@ function App() {
                   <span className="font-semibold text-coffee-brown">5.0 Rating</span>
                 </div>
                 <blockquote className="text-gray-600 italic">
-                  "The best coffee in Baner! The atmosphere is so cozy and the staff is incredibly friendly. 
-                  My go-to place for morning coffee and evening conversations."
+                  "You can taste the difference in every cup! The attention to detail in their brewing process 
+                  is incredible. This is what real coffee should taste like."
                 </blockquote>
                 <div className="mt-4 font-medium text-coffee-brown">- Priya S., Regular Customer</div>
               </Card>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-coffee-brown/5 p-6 rounded-lg text-center">
-                  <Coffee className="h-8 w-8 text-coffee-brown mx-auto mb-2" />
-                  <div className="font-semibold text-coffee-brown">Premium Beans</div>
-                  <div className="text-sm text-gray-600">Sourced globally</div>
-                </div>
-                <div className="bg-coffee-brown/5 p-6 rounded-lg text-center">
-                  <Clock className="h-8 w-8 text-coffee-brown mx-auto mb-2" />
-                  <div className="font-semibold text-coffee-brown">Fresh Daily</div>
-                  <div className="text-sm text-gray-600">Roasted in-house</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
