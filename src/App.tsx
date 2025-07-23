@@ -13,30 +13,120 @@ function App() {
 
   const menuItems = {
     coffee: [
-      { name: 'Espresso', price: '₹80', description: 'Rich and bold single shot' },
-      { name: 'Cappuccino', price: '₹120', description: 'Perfect balance of espresso, steamed milk, and foam' },
-      { name: 'Latte', price: '₹140', description: 'Smooth espresso with steamed milk' },
-      { name: 'Americano', price: '₹100', description: 'Espresso with hot water' },
-      { name: 'Mocha', price: '₹160', description: 'Chocolate and espresso blend' },
-      { name: 'Cold Brew', price: '₹130', description: 'Smooth, cold-extracted coffee' }
+      { 
+        name: 'Espresso', 
+        price: '₹80', 
+        description: 'Rich and bold single shot',
+        image: 'https://images.unsplash.com/photo-1572281451006-34e8940bb5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxlc3ByZXNzbyUyMHNob3QlMjBjb2ZmZWUlMjBjdXAlMjBwcm9mZXNzaW9uYWx8ZW58MHwwfHx8MTc1MzI1MTgwNHww&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Cappuccino', 
+        price: '₹120', 
+        description: 'Perfect balance of espresso, steamed milk, and foam',
+        image: 'https://images.unsplash.com/photo-1544281474-bdf3e12f871f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxjYXBwdWNjaW5vJTIwbGF0dGUlMjBhcnQlMjBmb2FtJTIwYmVhdXRpZnVsfGVufDB8MHx8fDE3NTMyNTE4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Latte', 
+        price: '₹140', 
+        description: 'Smooth espresso with steamed milk',
+        image: 'https://images.unsplash.com/photo-1608833269765-a52366f7c40e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwyfHxjYXBwdWNjaW5vJTIwbGF0dGUlMjBhcnQlMjBmb2FtJTIwYmVhdXRpZnVsfGVufDB8MHx8fDE3NTMyNTE4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Americano', 
+        price: '₹100', 
+        description: 'Espresso with hot water',
+        image: 'https://images.unsplash.com/photo-1642316201223-2331fd52efa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxhbWVyaWNhbm8lMjBibGFjayUyMGNvZmZlZSUyMGN1cCUyMHN0ZWFtfGVufDB8MHx8fDE3NTMyNTE4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Mocha', 
+        price: '₹160', 
+        description: 'Chocolate and espresso blend',
+        image: 'https://images.unsplash.com/photo-1664793678025-21bb2d47c2a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxtb2NoYSUyMGNob2NvbGF0ZSUyMGNvZmZlZSUyMHdoaXBwZWQlMjBjcmVhbXxlbnwwfDB8fHwxNzUzMjUxODE2fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Cold Brew', 
+        price: '₹130', 
+        description: 'Smooth, cold-extracted coffee',
+        image: 'https://images.unsplash.com/photo-1610920051820-cb947e1c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwyfHxhbWVyaWNhbm8lMjBibGFjayUyMGNvZmZlZSUyMGN1cCUyMHN0ZWFtfGVufDB8MHx8fDE3NTMyNTE4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      }
     ],
     tea: [
-      { name: 'Masala Chai', price: '₹60', description: 'Traditional Indian spiced tea' },
-      { name: 'Green Tea', price: '₹70', description: 'Fresh and healthy' },
-      { name: 'Earl Grey', price: '₹80', description: 'Classic English tea' },
-      { name: 'Herbal Tea', price: '₹75', description: 'Caffeine-free blend' }
+      { 
+        name: 'Masala Chai', 
+        price: '₹60', 
+        description: 'Traditional Indian spiced tea',
+        image: 'https://images.unsplash.com/photo-1669663078569-aa77d40c81e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxtYXNhbGElMjBjaGFpJTIwdGVhJTIwc3BpY2VzJTIwbWlsa3xlbnwwfDB8fHwxNzUzMjUxODIyfDA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Green Tea', 
+        price: '₹70', 
+        description: 'Fresh and healthy',
+        image: 'https://images.unsplash.com/photo-1638367779083-3a8f8d7fcd6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHRlYSUyMGdsYXNzJTIwY3VwJTIwdHJhbnNwYXJlbnQlMjBob3R8ZW58MHwwfHx8MTc1MzI1MTgzMHww&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Earl Grey', 
+        price: '₹80', 
+        description: 'Classic English tea',
+        image: 'https://images.unsplash.com/photo-1730281911215-fb36f0ad8af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwyfHxtYXNhbGElMjBjaGFpJTIwdGVhJTIwc3BpY2VzJTIwbWlsa3xlbnwwfDB8fHwxNzUzMjUxODIyfDA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Herbal Tea', 
+        price: '₹75', 
+        description: 'Caffeine-free blend',
+        image: 'https://images.unsplash.com/photo-1566931081758-1df1109f4a2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwzfHxncmVlbiUyMHRlYSUyMGdsYXNzJTIwY3VwJTIwdHJhbnNwYXJlbnQlMjBob3R8ZW58MHwwfHx8MTc1MzI1MTgzMHww&ixlib=rb-4.1.0&q=80&w=1080'
+      }
     ],
     snacks: [
-      { name: 'Croissant', price: '₹90', description: 'Buttery and flaky' },
-      { name: 'Sandwich', price: '₹150', description: 'Fresh ingredients, multiple options' },
-      { name: 'Muffin', price: '₹80', description: 'Freshly baked daily' },
-      { name: 'Cookies', price: '₹50', description: 'Homemade varieties' }
+      { 
+        name: 'Samosa', 
+        price: '₹40', 
+        description: 'Crispy Indian snack with spiced filling',
+        image: 'https://images.unsplash.com/photo-1716801564904-5605f562b664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxzYW1vc2ElMjBpbmRpYW4lMjBzbmFjayUyMGZyaWVkJTIwZ29sZGVufGVufDB8MHx8fDE3NTMyNTE4MzR8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Club Sandwich', 
+        price: '₹150', 
+        description: 'Fresh ingredients, multiple layers',
+        image: 'https://images.unsplash.com/photo-1655195672061-90c23e3e8026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxzYW5kd2ljaCUyMGNsdWIlMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjBicmVhZHxlbnwwfDB8fHwxNzUzMjUxODM4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Grilled Sandwich', 
+        price: '₹120', 
+        description: 'Perfectly toasted with cheese',
+        image: 'https://images.unsplash.com/photo-1649138759434-283589b34e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwyfHxzYW5kd2ljaCUyMGNsdWIlMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjBicmVhZHxlbnwwfDB8fHwxNzUzMjUxODM4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Caprese Sandwich', 
+        price: '₹140', 
+        description: 'Fresh mozzarella, tomato, and basil',
+        image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwzfHxzYW5kd2ljaCUyMGNsdWIlMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjBicmVhZHxlbnwwfDB8fHwxNzUzMjUxODM4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      }
     ],
     desserts: [
-      { name: 'Tiramisu', price: '₹180', description: 'Classic Italian dessert' },
-      { name: 'Cheesecake', price: '₹160', description: 'Creamy and rich' },
-      { name: 'Brownie', price: '₹120', description: 'Chocolate lover\'s delight' },
-      { name: 'Ice Cream', price: '₹100', description: 'Various flavors available' }
+      { 
+        name: 'Tiramisu', 
+        price: '₹180', 
+        description: 'Classic Italian dessert with coffee layers',
+        image: 'https://images.unsplash.com/photo-1671370796187-bc1a7f2574e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHx0aXJhbWlzdSUyMGRlc3NlcnQlMjBjb2ZmZWUlMjBtYXNjYXJwb25lJTIwbGF5ZXJzfGVufDB8MHx8fDE3NTMyNTE4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Chocolate Cake', 
+        price: '₹160', 
+        description: 'Rich and decadent chocolate layers',
+        image: 'https://images.unsplash.com/photo-1741244133035-660d79b51bfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwyfHxicm93bmllJTIwY2hvY29sYXRlJTIwZnVkZ2UlMjBkZXNzZXJ0JTIwc3F1YXJlfGVufDB8MHx8fDE3NTMyNTE4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Brownie', 
+        price: '₹120', 
+        description: 'Fudgy chocolate brownie square',
+        image: 'https://images.unsplash.com/photo-1739667648859-5434b0d677ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwzfHxicm93bmllJTIwY2hvY29sYXRlJTIwZnVkZ2UlMjBkZXNzZXJ0JTIwc3F1YXJlfGVufDB8MHx8fDE3NTMyNTE4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      },
+      { 
+        name: 'Sticky Date Pudding', 
+        price: '₹140', 
+        description: 'Warm dessert with caramel sauce',
+        image: 'https://images.unsplash.com/photo-1724116380693-52da975b9bf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI1Njd8MHwxfHNlYXJjaHwxfHxicm93bmllJTIwY2hvY29sYXRlJTIwZnVkZ2UlMjBkZXNzZXJ0JTIwc3F1YXJlfGVufDB8MHx8fDE3NTMyNTE4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      }
     ]
   }
 
@@ -211,7 +301,14 @@ function App() {
                   </div>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {items.map((item, index) => (
-                      <Card key={index} className="hover:shadow-lg transition-shadow border-coffee-brown/10">
+                      <Card key={index} className="hover:shadow-lg transition-shadow border-coffee-brown/10 overflow-hidden">
+                        <div className="aspect-video relative overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.name}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
                         <CardHeader>
                           <div className="flex justify-between items-start">
                             <CardTitle className="text-coffee-brown">{item.name}</CardTitle>
